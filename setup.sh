@@ -7,6 +7,7 @@ SCRIPTPATH=$(dirname $SCRIPT)
 rm ~/.bashrc
 rm ~/.vimrc -f
 rm ~/.vim -Rf
+sudo apt-get install vim-nox
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
 ln -s $SCRIPTPATH/dots/mysql/.my.cnf ~/.my.cnf
