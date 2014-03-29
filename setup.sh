@@ -5,11 +5,15 @@ SCRIPT=$(readlink -f $0)
 SCRIPTPATH=$(dirname $SCRIPT)
 
 rm ~/.bashrc
+rm ~/.vimrc -f
+rm ~/.vim -Rf
+git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
 ln -s $SCRIPTPATH/dots/mysql/.my.cnf ~/.my.cnf
 ln -s $SCRIPTPATH/dots/grc/.grcat ~/.grcat
 ln -s $SCRIPTPATH/dots/git/.gitconfig ~/.gitconfig
-ln -s $SCRIPTPATH/dots/vim/.vim ~/
 ln -s $SCRIPTPATH/dots/vim/.vimrc ~/.vimrc
 ln -s $SCRIPTPATH/dots/bash/.bashrc ~/.bashrc
 ln -s $SCRIPTPATH/dots/tmux/.tmux.conf ~/.tmux.conf
+
+vim +PluginInstall +qall
