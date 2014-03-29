@@ -33,6 +33,8 @@ filetype plugin indent on     " required
 set t_Co=256
 colorscheme wombat256
 
+set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+
 " NERDTree mapping
 nmap <C-N>v :NERDTree<cr>
 nmap <C-N>x :NERDTreeClose<cr>
@@ -87,3 +89,4 @@ set tabstop=4
 set softtabstop=4
 set expandtab 
 set smarttab
+syntax on
