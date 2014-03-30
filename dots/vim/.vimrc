@@ -35,9 +35,10 @@ colorscheme wombat256
 
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
-" NERDTree mapping
+" NERDTree 
 nmap <C-N>v :NERDTree<cr>
 nmap <C-N>x :NERDTreeClose<cr>
+let NERDTreeIgnore = ['\.pyc$']
 
 " Python
 let g:pymode_lint_unmodified = 1 " Always checking
