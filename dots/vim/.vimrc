@@ -42,6 +42,8 @@ nmap <C-N>x :NERDTreeClose<cr>
 " Python
 let g:pymode_lint_unmodified = 1 " Always checking
 let g:pymode_folding = 0
+let g:pymode_doc = 0
+let g:pymode_rope_complete_on_dot = 0
 nmap <C-P>f :PymodeLintAuto<cr>
 
 " Bufexplorer
