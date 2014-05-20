@@ -3,3 +3,5 @@
 [user]
 	name = StyleEX
 	email = styleex@xakep.ru
+[core]
+	editor = vim
