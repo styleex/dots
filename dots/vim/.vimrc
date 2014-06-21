@@ -19,13 +19,15 @@ Plugin 'tpope/vim-surround'
 Plugin 'StanAngeloff/php.vim'
 Plugin 'pangloss/vim-javascript'
 Plugin 'kchmck/vim-coffee-script'
-Plugin 'lepture/vim-css'
+Plugin 'chrisyip/Better-CSS-Syntax-for-Vim'
 Plugin 'groenewege/vim-less'
 Plugin 'lepture/vim-jinja'
 Plugin 'vim-scripts/django.vim'
+Plugin 'Rykka/riv.vim' " reStructuredText
 
 " Colors
 Plugin 'https://bitbucket.org/chadhs/wombat256.vim.git'
+Plugin 'pyte'
 
 filetype plugin indent on     " required
 " end Vundle
