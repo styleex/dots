@@ -24,6 +24,7 @@ Plugin 'groenewege/vim-less'
 Plugin 'lepture/vim-jinja'
 Plugin 'vim-scripts/django.vim'
 Plugin 'Rykka/riv.vim' " reStructuredText
+Plugin 'fatih/vim-go'
 
 " Colors
 Plugin 'https://bitbucket.org/chadhs/wombat256.vim.git'
@@ -36,6 +37,9 @@ set t_Co=256
 colorscheme wombat256
 
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
+
+" Golang
+let g:go_disable_autoinstall = 1
 
 " NERDTree 
 nmap <C-N>v :NERDTree<cr>
