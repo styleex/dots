@@ -35,7 +35,12 @@ filetype plugin indent on     " required
 " end Vundle
 
 set t_Co=256
-colorscheme wombat256
+
+try
+    colorscheme wombat256
+catch /^Vim\%((\a\+)\)\=:E185/
+endtry
+
 
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
