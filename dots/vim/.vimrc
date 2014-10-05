@@ -14,6 +14,7 @@ Plugin 'klen/python-mode'
 Plugin 'tomtom/tcomment_vim'
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'tpope/vim-surround'
+Bundle 'chase/vim-ansible-yaml'
 
 " Syntax
 Plugin 'StanAngeloff/php.vim'
