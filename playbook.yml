@@ -1,28 +1,23 @@
 ---
 - hosts: all
   tasks:
-    - name: Install nginx
-      sudo: yes
-      apt: name=nginx state=latest update_cache=yes
-
-    - name: Install common soft
+    - name: Dots | Install common soft
       sudo: yes
       apt: name={{item}} state=latest update_cache=yes
       with_items:
           - git
-          - python-dev
           - tmux
           - grc
           - vim
           - vim-nox
 
-    - name: Dots | Clone dots
+    - name: Dots | Fetch dots
       git: repo=https://github.com/StyleEX/dots.git accept_hostkey=yes dest=~/dots recursive=no
 
     - name: Dots | Install vundle
       git: repo=https://github.com/gmarik/vundle.git dest=~/.vim/bundle/vundle
 
-    - name: Dots | Link dots
+    - name: Dots | Link config files
       file: src={{item.src}} dest={{item.dest}} state=link
       with_items:
           - { src: '~/dots/dots/mysql/.my.cnf', dest: '~/.my.cnf' } 
