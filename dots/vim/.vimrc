@@ -46,6 +46,7 @@ set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
 " Golang
 let g:go_disable_autoinstall = 1
+let g:go_fmt_fail_silently = 1
 
 " NERDTree 
 nmap <C-N>v :NERDTree<cr>
