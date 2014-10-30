@@ -24,7 +24,6 @@ Plugin 'chrisyip/Better-CSS-Syntax-for-Vim'
 Plugin 'groenewege/vim-less'
 Plugin 'lepture/vim-jinja'
 Plugin 'vim-scripts/django.vim'
-Plugin 'Rykka/riv.vim' " reStructuredText
 Plugin 'fatih/vim-go'
 
 " Colors
