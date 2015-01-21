@@ -1,7 +1,36 @@
-[color]
-	ui = auto
 [user]
-	name = StyleEX
-	email = styleex@xakep.ru
+	name = Антон Владимиров
+	email = a.vladimirov@ideco.ru
+[color]
+    ui = auto
+[i18n]
+    commitencoding = utf8
+    logoutputencoding = utf8
+[grep]
+    lineNumber = true
+[merge]
+    tool = meld2way
+    conflictstyle = diff3
+[diff]
+    renames = copies
+[log]
+    decorate = full
 [core]
-	editor = vim
+    editor = vim
+[mergetool "meld2way"]
+    cmd = meld \"$LOCAL\" \"$MERGED\" \"$REMOTE\" --diff \"$BASE\" \"$LOCAL\" --diff \"$BASE\" \"$REMOTE\"
+[mergetool "meld3way"]
+    cmd = meld --output \"$MERGED\" \"$LOCAL\" \"$BASE\" \"$REMOTE\"
+[push]
+    default = upstream
+[fetch]
+    # If it is set to true, git-fetch-pack will check all fetched objects. 
+    # It will abort in the case of a malformed object or a broken link. The result of an abort are only dangling objects. 
+    fsckObjects = true
+[pull]
+    # По умолчанию делает pull --rebase
+    rebase = true
+[alias]
+    oneline = log --graph --oneline --all
+[gui]
+	editor = gedit
