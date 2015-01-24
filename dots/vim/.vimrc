@@ -50,7 +50,7 @@ let g:go_fmt_fail_silently = 1
 " NERDTree 
 nmap <C-N>v :NERDTree<cr>
 nmap <C-N>x :NERDTreeClose<cr>
-let NERDTreeIgnore = ['\.pyc$']
+let NERDTreeIgnore = ['\.pyc$', '__pycache__$']
 
 " Python
 let g:pymode_lint_on_fly = 1
@@ -59,6 +59,7 @@ let g:pymode_lint_on_write = 1
 let g:pymode_folding = 0
 let g:pymode_doc = 0
 let g:pymode_rope_complete_on_dot = 0
+let g:pymode_rope_regenerate_on_write = 0
 " let g:pymode_lint_ignore = "E501,W"
 nmap <C-P>f :PymodeLintAuto<cr>
 
