@@ -25,6 +25,7 @@ Plugin 'groenewege/vim-less'
 Plugin 'lepture/vim-jinja'
 Plugin 'vim-scripts/django.vim'
 Plugin 'fatih/vim-go'
+Plugin 'wting/rust.vim'
 
 " Colors
 Plugin 'https://bitbucket.org/chadhs/wombat256.vim.git'
@@ -43,11 +44,14 @@ endtry
 
 set rtp+=~/.vim/bundle/powerline/powerline/bindings/vim
 
+" Remove trailing spaces
+autocmd BufWritePre *.* :%s/\s\+$//e
+
 " Golang
 let g:go_disable_autoinstall = 1
 let g:go_fmt_fail_silently = 1
 
-" NERDTree 
+" NERDTree
 nmap <C-N>v :NERDTree<cr>
 nmap <C-N>x :NERDTreeClose<cr>
 let NERDTreeIgnore = ['\.pyc$', '__pycache__$']
@@ -83,7 +87,7 @@ set nowb
 set noswapfile
 
 " Search
-set incsearch 
+set incsearch
 set showmatch
 
 " Others
@@ -103,9 +107,9 @@ set ai
 set si
 set wrap
 set number
-set shiftwidth=4 
-set tabstop=4 
+set shiftwidth=4
+set tabstop=4
 set softtabstop=4
-set expandtab 
+set expandtab
 set smarttab
 syntax on
