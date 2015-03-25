@@ -26,6 +26,8 @@ Plugin 'lepture/vim-jinja'
 Plugin 'vim-scripts/django.vim'
 Plugin 'fatih/vim-go'
 Plugin 'wting/rust.vim'
+Plugin 'elzr/vim-json'
+Plugin 'ekalinin/Dockerfile.vim'
 
 " Colors
 Plugin 'https://bitbucket.org/chadhs/wombat256.vim.git'
