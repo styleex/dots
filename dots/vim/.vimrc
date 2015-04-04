@@ -15,6 +15,7 @@ Plugin 'tomtom/tcomment_vim'
 Plugin 'jlanzarotta/bufexplorer'
 Plugin 'tpope/vim-surround'
 Plugin 'chase/vim-ansible-yaml'
+Plugin 'majutsushi/tagbar'
 
 " Syntax
 Plugin 'StanAngeloff/php.vim'
@@ -28,6 +29,7 @@ Plugin 'fatih/vim-go'
 Plugin 'wting/rust.vim'
 Plugin 'elzr/vim-json'
 Plugin 'ekalinin/Dockerfile.vim'
+Plugin 'timonv/vim-cargo.git'
 
 " Colors
 Plugin 'https://bitbucket.org/chadhs/wombat256.vim.git'
@@ -53,9 +55,13 @@ autocmd BufWritePre *.* :%s/\s\+$//e
 let g:go_disable_autoinstall = 1
 let g:go_fmt_fail_silently = 1
 
+" Rust
+nmap <F5> :CargoBuild<CR>
+nmap <F6> :CargoRun<CR><CR>
+
 " NERDTree
-nmap <C-N>v :NERDTree<cr>
 nmap <C-N>x :NERDTreeClose<cr>
+nmap <C-N>v :NERDTree<cr>
 let NERDTreeIgnore = ['\.pyc$', '__pycache__$']
 
 " Python
@@ -70,9 +76,9 @@ let g:pymode_rope_regenerate_on_write = 0
 nmap <C-P>f :PymodeLintAuto<cr>
 
 " Bufexplorer
-nmap <F5> <Esc>:BufExplorer<cr>
-vmap <F5> <esc>:BufExplorer<cr>
-imap <F5> <esc>:BufExplorer<cr>
+nmap <F7> <Esc>:BufExplorer<cr>
+vmap <F7> <esc>:BufExplorer<cr>
+imap <F7> <esc>:BufExplorer<cr>
 
 " Windows navigation
 map <C-j> <C-W>j

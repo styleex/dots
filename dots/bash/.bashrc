@@ -16,3 +16,5 @@ _pip_completion()
 complete -o default -F _pip_completion pip
 # pip bash completion end
 
+export PATH=${PATH}:/home/styleex/Загрузки/android-sdk-linux/tools
+export PATH=${PATH}:/home/styleex/Загрузки/android-sdk-linux/platform-tools
