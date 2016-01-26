@@ -32,7 +32,7 @@ Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'timonv/vim-cargo.git'
 
 " Colors
-Plugin 'https://bitbucket.org/chadhs/wombat256.vim.git'
+Plugin 'https://github.com/gergap/wombat256.git'
 Plugin 'pyte'
 
 filetype plugin indent on     " required
