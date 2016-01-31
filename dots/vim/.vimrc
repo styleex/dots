@@ -18,13 +18,10 @@ Plugin 'chase/vim-ansible-yaml'
 Plugin 'majutsushi/tagbar'
 
 " Syntax
-Plugin 'StanAngeloff/php.vim'
 Plugin 'pangloss/vim-javascript'
-Plugin 'kchmck/vim-coffee-script'
 Plugin 'chrisyip/Better-CSS-Syntax-for-Vim'
 Plugin 'groenewege/vim-less'
 Plugin 'lepture/vim-jinja'
-Plugin 'vim-scripts/django.vim'
 Plugin 'fatih/vim-go'
 Plugin 'wting/rust.vim'
 Plugin 'elzr/vim-json'
@@ -32,8 +29,7 @@ Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'timonv/vim-cargo.git'
 
 " Colors
-Plugin 'https://github.com/gergap/wombat256.git'
-Plugin 'pyte'
+Plugin 'https://github.com/StyleEX/wombat256.vim.git'
 
 filetype plugin indent on     " required
 " end Vundle
