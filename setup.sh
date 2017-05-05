@@ -8,11 +8,7 @@ rm ~/.bashrc
 rm ~/.vimrc -f
 rm ~/.vim -Rf
 
-# Google Chrome
-sudo bash -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/google-chrome.list'
-
-sudo apt-get update && sudo apt-get install vim-nox # google-chrome-stable
-
+sudo apt-get update && sudo apt-get install vim-nox
 git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 
 ln -s $SCRIPTPATH/dots/mysql/.my.cnf ~/.my.cnf
